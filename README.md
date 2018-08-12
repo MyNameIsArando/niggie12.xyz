@@ -4,5 +4,5 @@ TESTING STAGE! // VA-11 HALL-A themed site
 it's not pretty.
 
 ## Contributors:
-![Arando Avi](https://i.imgur.com/wX3D5Lb.png "Arando")
-![Demi Avi](https://i.imgur.com/kSmy5Ix.png "Demiture")
+![Arando Avi](https://i.imgur.com/wX3D5Lb.png [Arando](https://github.com/MyNameIsArando))
+![Demi Avi](https://i.imgur.com/kSmy5Ix.png [Demiture](https://github.com/Demiture))
