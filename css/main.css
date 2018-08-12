@@ -1,5 +1,4 @@
 a {
-	text-decoration: none;
 	color: white;
 }
 body {
@@ -9,7 +8,7 @@ body {
 	padding: 0;
 	height: 100%;
 	width: 100%;
-	background-image: url("");
+	background-image: url("../img/landing/landing-bg.png");
   background-size: cover;
   background-position: center;
 }
@@ -28,7 +27,7 @@ img {
 	display: block;
 }
 p {
-	font-family: 'Roboto Mono', monospace;
+	font-family: cyber;
 	font-size: 1em;
 	color: white;
 	text-align: center;
@@ -43,30 +42,62 @@ ul {
   src: url("../font.ttf");
 }
 
-.welcome {
-  font-size: 32px;
-  font-family: cyber;
-  padding-top: 15%;
-}
-#image {
-  width: 18%;
-  margin-top: 5%;
-  opacity: 0.6;
-}
-#music {
-  display: none;
-}
-#mu {
-  margin-top: 1%;
+/* Main CSS */
+.bg-dim {
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.25;
+  animation: bg-fade 4s;
 }
 
+@keyframes bg-fade {
+  from { opacity: 1; }
+  to { opacity: 0.25; }
+}
+
+
+.welcome {
+  position: absolute; top: 10%; left: 5%;
+}
+.jill {
+  font-size: 86px;
+  text-align: left;
+}
+
+#unlock {
+  width: 172px;
+  opacity: 0.7;
+  position: absolute; top: 60%; left: 5%;
+  cursor: pointer;
+}
+#note {
+  font-size: 18px;
+  opacity: 0.6;
+  position: absolute; top: 90%; left: 5%;
+}
+
+/* Animations */
 .fade {
   animation: fade-in 4s;
 }
 @keyframes fade-in {
   from { opacity: 0; }
-  to { opacity: 0.6; }
+  to { opacity: 1; }
 }
+
+
+
+/* @Media CSS */
+@media screen and (max-width: 1367px) {
+  .jill {
+    font-size: 64px;
+  }
+  #unlock {
+    width: 128px;
+  }
+}
+
 
 /* Typewriter effect */ /* Not my code */
 .typewriter {
@@ -90,7 +121,7 @@ ul {
 }
 
 
-/* CRT Effect */
+/* CRT Effect */ /* Not my code */
 @keyframes flicker {
     0% {
       opacity: 0.27861;
@@ -233,7 +264,7 @@ ul {
     opacity: 0;
     z-index: 2;
     pointer-events: none;
-    animation: flicker 2.4s infinite;
+    animation: flicker 1.4s infinite;
   }
   .crt::before {
     content: " ";
@@ -249,5 +280,5 @@ ul {
     pointer-events: none;
   }
   .crt {
-    animation: textShadow 1.6s infinite;
+    animation: textShadow 0s infinite; /* Change number value to enable textshadow */
 }

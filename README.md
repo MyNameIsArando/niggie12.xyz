@@ -1,2 +1,4 @@
 # niggie12.xyz
-parked
+Me attempting to make something
+
+it's not pretty
