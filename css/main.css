@@ -37,6 +37,11 @@
   background-size: cover;
 }
 
+.disableSave {
+  -webkit-user-select:none;
+  -webkit-touch-callout:none;
+}
+
 /* Convo Box CSS */
 .convo-box {
   margin: 20px;
