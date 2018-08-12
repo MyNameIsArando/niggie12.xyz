@@ -13,7 +13,7 @@
 
 	document.getElementById("date").innerHTML = days[d.getDay()] + " " + d.getDate() + "/" + d.getMonth();
 
-	/* Unlock script to hide cover div by Demi x */
+	/* Unlock script to "unlock" the page, by Demi x */
 	var timeoutId = 0,
   	holdTime = 1000,
 	holdTrigger = $('.holdTrigger'),
@@ -24,13 +24,32 @@
     	timeoutId = setTimeout(menuToggle, holdTime);
 	}).bind('mouseup mouseleave', function() {
     	clearTimeout(timeoutId);
-	$('.spinner').removeClass('active');
 	});
 
+	holdTrigger.on("taphold", function(){
+		$(".jill").slideToggle("slow");
+        $("#welcomeLayer").slideToggle("slow");
+        $("#unlock").slideToggle("fast");
+		$("#note").slideToggle("fast");
+		$("#main-container").slideToggle("slow");
+	});
+	/* i think this jquery event should work for mobiles */
+
+	window.oncontextmenu = function(event) {
+		event.preventDefault();
+		event.stopPropagation();
+		return false;
+	};
+	/* script to prevent context menus popping up */
+
 	function menuToggle() {
-		  /* TODO: Add fade effect here tbh fam */
-		  welcomeLayerV.style.display = "none";
-		  mainContainer.style.display = "block";
+		/* TODO: Add fade effect here tbh fam -- DONE(?) */
+        $(".jill").slideToggle("slow");
+        $("#welcomeLayer").slideToggle("slow");
+        $("#unlock").slideToggle("fast");
+		$("#note").slideToggle("fast");
+		$("#main-container").slideToggle("slow");
+		
 	}
 
 
