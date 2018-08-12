@@ -67,10 +67,17 @@ ul {
 
 #unlock {
   width: 172px;
-  opacity: 0.7;
+  opacity: 0.3;
   position: absolute; top: 60%; left: 5%;
   cursor: pointer;
+  transition: opacity 1.5s;
+  -webkit-transition: opacity 1.5s;
 }
+#unlock:hover {
+  opacity: 1;
+}
+
+
 #note {
   font-size: 18px;
   opacity: 0.6;

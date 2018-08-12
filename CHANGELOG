@@ -4,3 +4,5 @@
 2018-09-12 02:11    -   Added Favicon
                     -   BG image on landing page now brighter (from 75% to 80%)
                     -   wait.html now points to the new css file name
+2018-09-12 02:30    -   Lock icon significantly dimmer
+                    -   Lock icon becomes brighter when hovered by cursor
