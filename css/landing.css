@@ -47,13 +47,13 @@ ul {
   height: 100%;
   width: 100%;
   background-color: #000;
-  opacity: 0.25;
+  opacity: 0.2;
   animation: bg-fade 4s;
 }
 
 @keyframes bg-fade {
   from { opacity: 1; }
-  to { opacity: 0.25; }
+  to { opacity: 0.2; }
 }
 
 

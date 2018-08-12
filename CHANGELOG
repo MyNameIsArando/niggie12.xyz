@@ -1,3 +1,6 @@
 2018-09-12 02:01    -   Initial Commit for fansite. Landing page 80%~ done at this point, unlock button links to wait page.
 2018-09-12 02:04    -   Fixed Metadata
                     -   Changed CSS file name and link
+2018-09-12 02:11    -   Added Favicon
+                    -   BG image on landing page now brighter (from 75% to 80%)
+                    -   wait.html now points to the new css file name
