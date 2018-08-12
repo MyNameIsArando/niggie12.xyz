@@ -24,13 +24,24 @@
     	timeoutId = setTimeout(menuToggle, holdTime);
 	}).bind('mouseup mouseleave', function() {
     	clearTimeout(timeoutId);
-	$('.spinner').removeClass('active');
+	});
+
+	holdTrigger.on('taphold', menuToggle());
+	/* i think this jquery event should work for mobiles */
+
+	$('#unlock').on('touchstart', function (ev) {
+		timer = setInterval(onTimerTick, 250); // 250ms interval
+		return false;
 	});
 
 	function menuToggle() {
-		  /* TODO: Add fade effect here tbh fam */
-		  welcomeLayerV.style.display = "none";
-		  mainContainer.style.display = "block";
+		/* TODO: Add fade effect here tbh fam -- DONE(?) */
+        $(".jill").slideToggle("slow");
+        $("#welcomeLayer").slideToggle("slow");
+        $("#unlock").slideToggle("fast");
+		$("#note").slideToggle("fast");
+		$("#main-container").slideToggle("slow");
+		
 	}
 
 
