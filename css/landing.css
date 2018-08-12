@@ -128,7 +128,7 @@ ul {
 }
 
 
-/* CRT Effect */ /* Not my code */
+/* CRT Effect */ /* Not my code http://aleclownes.com/2017/02/01/crt-display.html */
 @keyframes flicker {
     0% {
       opacity: 0.27861;
@@ -271,7 +271,7 @@ ul {
     opacity: 0;
     z-index: 2;
     pointer-events: none;
-    animation: flicker 1.4s infinite;
+    animation: flicker 1.2s infinite;
   }
   .crt::before {
     content: " ";
