@@ -13,7 +13,7 @@
 
 	document.getElementById("date").innerHTML = days[d.getDay()] + " " + d.getDate() + "/" + d.getMonth();
 
-	/* Unlock script to hide cover div by Demi x */
+	/* Unlock script to "unlock" the page, by Demi x */
 	var timeoutId = 0,
   	holdTime = 1000,
 	holdTrigger = $('.holdTrigger'),
