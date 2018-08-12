@@ -1,7 +1,104 @@
 /* Main CSS */
 
-.main-container {
+#main-container {
   display: none;
   background-color: #000;
-  width: 100%; height: 100%;
+  height: 100%;
+  text-align: center;
+  vertical-align: top;
+  padding: 5%;
+  box-sizing: border-box;
+}
+
+.section-container {
+  text-align: center;
+  vertical-align: top;
+  display: inline-block;
+  font-size: 0;
+}
+
+/* Left side */
+.section-box {
+  border: 4px solid #fff;
+  display: inline-block;
+  width: 600px; height: 300px;
+  margin: 10px;
+  vertical-align: top;
+}
+.section-box-cover {
+  display: inline-block;
+  width: 640px; height: 700px;
+  vertical-align: top;
+}
+
+.section-image {
+  background-image: url('../img/main/room.gif');
+  background-position: center;
+  background-size: cover;
+}
+
+/* Convo Box CSS */
+.convo-box {
+  margin: 20px;
+  text-align: center;
+}
+.conversation {
+  font-size: 26px;
+  text-align: left;
+  padding-bottom: 5px;
+}
+.convo-space {
+  margin-top: 40px;
+}
+
+.controls {
+  display: inline-block;
+  font-family: cyber;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  width: 90px; height: 35px;
+  margin: 5px;
+  cursor: pointer;
+}
+#progress-bar[value] {
+  -webkit-appearance: none;
+   appearance: none;
+
+  width: 190px;
+  height: 5px;
+  background-color: #202020;
+  border: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+/* Phone */
+.section-box-phone {
+  border: 4px solid #fff;
+  display: inline-block;
+  width: 380px; height: 628px;
+  margin: 10px 0;
+  vertical-align: top;
+}
+.phone-bg {
+  background-image: url('../img/main/phone-bg.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.phone-app-container {
+  margin: 20px;
+  text-align: center;
+}
+.phone-app {
+  display: inline-block;
+  width: 330px; height: 102px;
+  background-position: center;
+  background-size: cover;
+  margin: 10px 0;
+  cursor: pointer;
 }
