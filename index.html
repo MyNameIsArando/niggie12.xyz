@@ -4,7 +4,7 @@
 <head>
 	<!-- Website & Images hosted by Github. -->
 	<!-- All copyrights belong to their respective owners. Please don't sue 👀 -->
-	<!-- Contact Email: tylercrowhurst123@gmail.com -->
+	<!-- Contact Email: tylercrowhurst123@gmail.com (& demi@track44.moe) -->
 	<!-- Coded using VSCode | Tested using Firefox -->
 	<link rel="stylesheet" type="text/css" href="css/landing.css" />
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
@@ -18,20 +18,41 @@
 </head>
 <body class="crt">
 	<div class="bg-dim"></div>
-	<div class="fade">
+	<div class="fade" id="welcomeLayer">
 		<div class="welcome">
-			<p class="jill">SAT 24/12</p>
+			<p class="jill" id="date">SAT 24/12</p>
 			<p class="jill">Welcome, Jill!</p>
 		</div>
-		<a href="wait.html"><img src="img/landing/lock.png" id="unlock" /></a>
+		<a class="holdTrigger" href="#"><img src="img/landing/lock.png" id="unlock" /></a>
 		<p id="note">A VA-11 HALL-A FANSITE</p>
 	</div>
 </body>
 <script>
 	/* document.getElementById("music").volume = 0.01; */
+
+	/* Date script thrown together by Demi x */
 	var d = new Date();
 	var days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
 
 	document.getElementById("date").innerHTML = days[d.getDay()] + " " + d.getDate() + "/" + d.getMonth();
+
+	/* Unlock script to hide cover div by Demi x */
+	var timeoutId = 0,
+    holdTime = 1000,
+	holdTrigger = $('.holdTrigger');
+	welcomeLayerV = document.getElementById("welcomeLayer");
+
+	holdTrigger.mousedown(function() {
+    	timeoutId = setTimeout(menuToggle, holdTime);
+	}).bind('mouseup mouseleave', function() {
+    	clearTimeout(timeoutId);
+	$('.spinner').removeClass('active');
+	});
+	
+	function menuToggle() {
+		 /* TODO: Add fade effect here tbh fam */
+		 welcomeLayerV.style.display = "none";
+		 /* insert div to display here */
+	}
 </script>
 </html>
