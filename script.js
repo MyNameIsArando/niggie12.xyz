@@ -1,5 +1,12 @@
 // JS File
 
+	// CRT Effect Toggle 
+	$(document).ready(function(){
+		$(".crtToggle").click(function(){
+			$("body").toggleClass("crt");
+		});
+	});
+
 	/* Date script thrown together by Demi x */
 	var d = new Date();
 	var days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
@@ -26,13 +33,6 @@
 		  mainContainer.style.display = "block";
 	}
 
-
-// CRT Effect Toggle 
-$(document).ready(function(){
-    $("#note").click(function(){
-        $("body").toggleClass("crt");
-    });
-});
 
 // Volume
 document.getElementById("music").volume = 0.02;
