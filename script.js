@@ -35,10 +35,12 @@
 	});
 	/* i think this jquery event should work for mobiles */
 
-	/* $('#unlock').on('touchstart', function (ev) {
-		timer = setInterval(onTimerTick, 1000); // 1000ms interval
-		
-	}); */
+	window.oncontextmenu = function(event) {
+		event.preventDefault();
+		event.stopPropagation();
+		return false;
+	};
+	/* script to prevent context menus popping up */
 
 	function menuToggle() {
 		/* TODO: Add fade effect here tbh fam -- DONE(?) */
