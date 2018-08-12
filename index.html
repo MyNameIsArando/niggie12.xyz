@@ -8,8 +8,8 @@
 	<!-- Coded using VSCode | Tested using Firefox -->
 	<link rel="stylesheet" type="text/css" href="css/base.css" />
 	<link rel="stylesheet" type="text/css" href="css/landing.css" />
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<meta property="title" content="Niggie12.XYZ">
 	<meta name="description" content="Testing site">
 	<meta name="author" content="Tyler Marc">
@@ -19,16 +19,22 @@
 </head>
 <body class="crt">
 	<div class="landing-cover">
+		<div class="bg-img"></div>
 		<div class="bg-dim"></div>
 		<div class="fade">
 			<div class="welcome">
-				<p class="jill">SAT 24/12</p>
+				<p class="jill" id="date"></p>
 				<p class="jill">Welcome, Jill!</p>
 			</div>
-			<img src="img/landing/lock.png" id="unlock" />
+			<img src="img/landing/lock.png" id="unlock" onclick="intheshadows()" />
 			<p id="note">A VA-11 HALL-A FANSITE</p>
 		</div>
 	</div>
+	<div class="main-container">
+		<img src="img/main/goofy.jpg" />
+		<p>lmao</p>
+	</div>
+	<audio src="audio.mp3" id="music" autoplay></audio>
 </body>
-<script src="js/script.js"></script>
+<script src="script.js"></script>
 </html>
