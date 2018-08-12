@@ -28,6 +28,10 @@
 	</div>
 </body>
 <script>
-	document.getElementById("music").volume = 0.01;
+	/* document.getElementById("music").volume = 0.01; */
+	var d = new Date();
+	var days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
+
+	document.getElementById("date").innerHTML = days[d.getDay()] + " " + d.getDate() + "/" + d.getMonth();
 </script>
 </html>
