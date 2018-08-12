@@ -1,9 +1,29 @@
 // JS File
 
-// Time/Date Script
-var d = new Date();
-var days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
-document.getElementById("date").innerHTML = days[d.getDay()] + " " + d.getDate() + "/" + d.getMonth();
+	/* Date script thrown together by Demi x */
+	var d = new Date();
+	var days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
+
+	document.getElementById("date").innerHTML = days[d.getDay()] + " " + d.getDate() + "/" + d.getMonth();
+
+	/* Unlock script to hide cover div by Demi x */
+	var timeoutId = 0,
+  holdTime = 1000,
+	holdTrigger = $('.holdTrigger'),
+	welcomeLayerV = document.getElementById("welcomeLayer");
+
+	holdTrigger.mousedown(function() {
+    	timeoutId = setTimeout(menuToggle, holdTime);
+	}).bind('mouseup mouseleave', function() {
+    	clearTimeout(timeoutId);
+	$('.spinner').removeClass('active');
+	});
+	
+	function menuToggle() {
+		  /* TODO: Add fade effect here tbh fam */
+		  welcomeLayerV.style.display = "none";
+		  /* insert div to display here */
+	}
 
 // Hide/Show
 $(document).ready(function(){
