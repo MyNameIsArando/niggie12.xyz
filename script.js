@@ -8,9 +8,10 @@
 
 	/* Unlock script to hide cover div by Demi x */
 	var timeoutId = 0,
-  holdTime = 1000,
+  	holdTime = 1000,
 	holdTrigger = $('.holdTrigger'),
-	welcomeLayerV = document.getElementById("welcomeLayer");
+	welcomeLayerV = document.getElementById("welcomeLayer"),
+	mainContainer = document.getElementById("main-container");
 
 	holdTrigger.mousedown(function() {
     	timeoutId = setTimeout(menuToggle, holdTime);
@@ -18,23 +19,13 @@
     	clearTimeout(timeoutId);
 	$('.spinner').removeClass('active');
 	});
-	
+
 	function menuToggle() {
 		  /* TODO: Add fade effect here tbh fam */
 		  welcomeLayerV.style.display = "none";
-		  /* insert div to display here */
+		  mainContainer.style.display = "block";
 	}
 
-// Hide/Show
-$(document).ready(function(){
-    $("#unlock").click(function(){
-        $(".main-container").slideToggle("slow");
-        $(".jill").slideToggle("slow");
-        $(".landing-cover").slideToggle("slow");
-        $("#unlock").slideToggle("fast");
-        $("#note").slideToggle("fast");
-    });
-});
 
 // CRT Effect Toggle 
 $(document).ready(function(){
@@ -83,3 +74,16 @@ player.currentTime = 0;
 // Set the play/pause button to 'play'
 changeButtonType(btnPlayPause, 'play');
 }  
+
+
+// Hide/Show
+/*
+$(document).ready(function(){
+    $("#unlock").click(function(){
+        $(".main-container").slideToggle("slow");
+        $(".jill").slideToggle("slow");
+        $(".landing-cover").slideToggle("slow");
+        $("#unlock").slideToggle("fast");
+        $("#note").slideToggle("fast");
+    });
+}); */
