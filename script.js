@@ -7,13 +7,13 @@ document.getElementById("date").innerHTML = days[d.getDay()] + " " + d.getDate()
 
 // Hide/Show
 $(document).ready(function(){
-	$("#unlock").click(function(){
-		$(".main-container").slideToggle("slow");
-		$(".jill").slideToggle("slow");
-		$(".landing-cover").slideToggle("slow");
-		$("#unlock").slideToggle("fast");
-		$("#note").slideToggle("fast");
-	});
+    $("#unlock").click(function(){
+        $(".main-container").slideToggle("slow");
+        $(".jill").slideToggle("slow");
+        $(".landing-cover").slideToggle("slow");
+        $("#unlock").slideToggle("fast");
+        $("#note").slideToggle("fast");
+    });
 });
 
 // CRT Effect Toggle 
