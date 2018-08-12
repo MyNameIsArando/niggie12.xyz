@@ -26,13 +26,19 @@
     	clearTimeout(timeoutId);
 	});
 
-	holdTrigger.on('taphold', menuToggle());
+	holdTrigger.on("taphold", function(){
+		$(".jill").slideToggle("slow");
+        $("#welcomeLayer").slideToggle("slow");
+        $("#unlock").slideToggle("fast");
+		$("#note").slideToggle("fast");
+		$("#main-container").slideToggle("slow");
+	});
 	/* i think this jquery event should work for mobiles */
 
-	$('#unlock').on('touchstart', function (ev) {
-		timer = setInterval(onTimerTick, 250); // 250ms interval
-		return false;
-	});
+	/* $('#unlock').on('touchstart', function (ev) {
+		timer = setInterval(onTimerTick, 1000); // 1000ms interval
+		
+	}); */
 
 	function menuToggle() {
 		/* TODO: Add fade effect here tbh fam -- DONE(?) */
