@@ -6,6 +6,7 @@
 	<!-- All copyrights belong to their respective owners. Please don't sue 👀 -->
 	<!-- Contact Email: tylercrowhurst123@gmail.com -->
 	<!-- Coded using VSCode | Tested using Firefox -->
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
 	<link rel="stylesheet" type="text/css" href="css/landing.css" />
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
@@ -17,17 +18,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body class="crt">
-	<div class="bg-dim"></div>
-	<div class="fade">
-		<div class="welcome">
-			<p class="jill">SAT 24/12</p>
-			<p class="jill">Welcome, Jill!</p>
+	<div class="landing-cover">
+		<div class="bg-dim"></div>
+		<div class="fade">
+			<div class="welcome">
+				<p class="jill">SAT 24/12</p>
+				<p class="jill">Welcome, Jill!</p>
+			</div>
+			<img src="img/landing/lock.png" id="unlock" />
+			<p id="note">A VA-11 HALL-A FANSITE</p>
 		</div>
-		<a href="wait.html"><img src="img/landing/lock.png" id="unlock" /></a>
-		<p id="note">A VA-11 HALL-A FANSITE</p>
 	</div>
 </body>
-<script>
-	document.getElementById("music").volume = 0.01;
-</script>
+<script src="js/script.js"></script>
 </html>
