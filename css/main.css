@@ -6,7 +6,7 @@
   height: 100%;
   text-align: center;
   vertical-align: top;
-  padding: 5%;
+  padding: 2%;
   box-sizing: border-box;
 }
 
@@ -24,6 +24,21 @@
   width: 600px; height: 300px;
   margin: 10px;
   vertical-align: top;
+}
+.section-box-text {
+  border: 4px solid #fff;
+  display: inline-block;
+  width: 600px; height: 180px;
+  margin: 10px;
+  vertical-align: top;
+}
+.section-box-con {
+  border: 4px solid #fff;
+  display: inline-block;
+  width: 600px; height: 92px;
+  margin: 10px;
+  vertical-align: top;
+  text-align: left;
 }
 .section-box-cover {
   display: inline-block;
@@ -61,24 +76,19 @@
   background-color: #fff;
   color: #000;
   border: none;
-  width: 90px; height: 35px;
-  margin: 5px;
+  width: 120px; height: 92px;
+  margin: 0;
   cursor: pointer;
+  transition: background-color 0.5s;
 }
-#progress-bar[value] {
-  -webkit-appearance: none;
-   appearance: none;
-
-  width: 190px;
-  height: 5px;
-  background-color: #202020;
-  border: 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+.controls:hover {
+  background-color: #707070;
 }
 
 /* Phone */
 .section-box-phone {
   border: 4px solid #fff;
+  border-radius: 5px;
   display: inline-block;
   width: 380px; height: 628px;
   margin: 10px 0;
@@ -101,4 +111,38 @@
   background-size: cover;
   margin: 10px 0;
   cursor: pointer;
+}
+
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  overflow: auto;
+  background-color: #000;
+  background-color: rgba(0,0,0,0.4);
+}
+.pop-content {
+  background-color: #101010;
+  margin: auto;
+  padding: 20px;
+  border: 4px solid #888;
+  border-radius: 20px;
+  width: 40%;
+}
+.chachaslide {
+	animation: slide 0.8s;
+}
+@keyframes slide {
+  from { padding-top: 300px; }
+  to { padding-top: 100px; }
+}
+
+.modal-title {
+  font-size: 26px;
+  text-decoration: underline;
 }

@@ -1,0 +1,33 @@
+/* APP CSS */
+
+/* Welcome App */
+.welcome-cover {
+  display: none;
+  background-color: blue;
+  width: 100%; height: 100%;
+}
+
+
+/* Danger/u/ App */
+.danger-cover {
+  display: none;
+  background-color: red;
+  width: 100%; height: 100%;
+}
+
+
+/* Life & Backup App */
+.life-cover {
+  display: none;
+  background-color: green;
+  width: 100%; height: 100%;
+}
+
+
+/* Augmented Eye */
+.augeye-cover {
+  display: none;
+  background-color: purple;
+  width: 100%; height: 100%;
+}
+

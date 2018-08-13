@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Niggie12</title>
+<title>VA-11 HALL-A FANSITE</title>
 <head>
 	<!-- Website & Images hosted by Github. -->
 	<!-- All copyrights belong to their respective owners. Please don't sue 👀 -->
@@ -9,10 +9,11 @@
 	<link rel="stylesheet" type="text/css" href="css/base.css" />
 	<link rel="stylesheet" type="text/css" href="css/landing.css" />
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" href="css/app.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<meta property="title" content="Niggie12.XYZ">
-	<meta name="description" content="Testing site">
-	<meta name="author" content="Tyler Marc">
+	<meta property="title" content="VA-11 HALL-A FANSITE">
+	<meta name="description" content="wip">
+	<meta name="author" content="Arando & Demi">
 	<meta charset='utf-8'>
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,35 +35,59 @@
 		<div class="section-container">
 			<div class="section-box-cover">
 				<div class="section-box section-image"></div>
-				<div class="section-box section-text">
+				<div class="section-box-text">
 					<div class="convo-box">
 						<p class="conversation">Fore: "Isn't this site a bit shitty?"</p>
 						<p class="conversation">Jill: "You don't have to tell me twice."</p>
 					</div>
-					<div class="convo-space"></div>
-					<div class="convo-box">
-						<button class="controls crtToggle">CRT</button>
-						<br />
-						<button class="controls" onclick="pauseAudio()">Pause</button>
-						<button class="controls" onclick="playAudio()">Play</button>
-						<div id="audio_player" style="text-align: center;">
-							<progress id='progress-bar' min='0' max='100' value='0'>0% played</progress>
-							<input type="range" id="volume-bar" title="volume" min="0" max="10" step="1" value="10" style="display: none;">
-						</div>
-					</div>
+				</div>
+				<div class="section-box-con">
+					<button class="controls" id="credit-btn">Credits</button>
+					<button class="controls" onclick="pauseAudio()">Pause</button>
+					<button class="controls" onclick="playAudio()">Play</button>
+					<button class="controls" id="relock">Lock</button>
+					<button class="controls crtToggle">CRT</button>
 				</div>
 			</div>
 			<div class="section-box-phone phone-bg">
 				<div class="phone-app-container">
-					<div class="phone-app" style="background-image: url(img/main/app-welcome.png);"></div>
-					<div class="phone-app" style="background-image: url(img/main/app-dangeru.png);"></div>
-					<div class="phone-app" style="background-image: url(img/main/app-save.png);"></div>
-					<div class="phone-app" style="background-image: url(img/main/app-augeye.png);"></div>
+					<div class="phone-app" id="app-welcome" style="background-image: url(img/main/app-welcome.png);"></div>
+					<div class="phone-app" id="app-dangeru" style="background-image: url(img/main/app-dangeru.png);"></div>
+					<div class="phone-app" id="app-life" style="background-image: url(img/main/app-save.png);"></div>
+					<div class="phone-app" id="app-augeye" style="background-image: url(img/main/app-augeye.png);"></div>
 				</div>
 			</div>
-			
 		</div>
 	</div>
+
+	<div class="welcome-cover">
+		<p>Dunno what to put here gonna be honest</p>
+		<p id="app-welcome-close">Close button</p>
+	</div>
+	<div class="danger-cover">
+		<p>Danger/u/ themed site here</p>
+		<p id="app-dangeru-close">Close button</p>
+	</div>
+	<div class="life-cover">
+		<p>Thinking to replace with a "Photo" app with decent art and credit for artists</p>
+		<p id="app-life-close">Close button</p>
+	</div>
+	<div class="augeye-cover">
+		<p>maybe some le funny articles?</p>
+		<p id="app-augeye-close">Close button</p>
+	</div>
+
+	<div id="popup" class="modal">
+		<div class="pop-content">
+			<span class="close" style="color: white; cursor: pointer;">&times;</span>
+			<p class="modal-title">Contributors</p>
+			<div class="contributor-cov">
+				<div class="contributor" style="background-image: url('img/misc/arando.png')"><p>Arando</p></div>
+				<div class="contributor" style="background-image: url('img/misc/demiture.png')"><p>Arando</p></div>
+			</div>
+		</div>
+	</div>
+
 	<audio src="audio.mp3" id="music" autoplay loop></audio>
 </body>
 <script src="script.js"></script>
