@@ -174,3 +174,9 @@
   line-height: 150px;
   vertical-align: middle;
 }
+
+@media screen and (max-width: 1367px) {
+  #main-container {
+    padding: 0;
+  }
+}
