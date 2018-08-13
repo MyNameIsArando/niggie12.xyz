@@ -26,7 +26,7 @@ img {
 	display: block;
 }
 p {
-	font-family: cyber;
+	font-family: vcr;
 	font-size: 1em;
 	color: white;
 	text-align: center;
@@ -40,8 +40,12 @@ ul {
 	padding: 0;
 }
 @font-face {
+  font-family: vcr;
+  src: url("../vcr-mono.ttf");
+}
+@font-face {
   font-family: cyber;
-  src: url("../font.ttf");
+  src: url("../recreation.ttf");
 }
 
 
