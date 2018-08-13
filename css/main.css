@@ -147,7 +147,30 @@
   to { padding-top: 100px; }
 }
 
-.modal-title {
+.modalTitle {
   font-size: 26px;
   text-decoration: underline;
+}
+.contributorCov {
+  text-align: center;
+  padding: 50px;
+}
+.contributor {
+  display: inline-block;
+  vertical-align: top;
+  margin: 20px;
+  width: 150px; height: 150px;
+  border-radius: 5px;
+  background-color: #202020;
+  background-position: center;
+  background-size: cover;
+  box-shadow: #000 0px 0px 0px;
+  transition: box-shadow 0.5s;
+}
+.contributor:hover {
+  box-shadow: #ff0000 3px 2px 2px
+}
+.contributorText {
+  line-height: 150px;
+  vertical-align: middle;
 }
