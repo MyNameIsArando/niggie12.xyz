@@ -75,25 +75,25 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#appDangeru").click(function(){
         $("#mainContainer").slideToggle("slow");
-        $(".dangerCover").slideToggle("slow");
+		$(".dangerCover").slideToggle("slow");
     });
 });
 // Dangeru Close
 $(document).ready(function(){
     $("#appDangeru-close").click(function(){
         $("#mainContainer").slideToggle("slow");
-        $(".dangerCover").slideToggle("slow");
+		$(".dangerCover").slideToggle("slow");
     });
 });
 
-// Life Open
+// Gallery Open
 $(document).ready(function(){
     $("#appLife").click(function(){
         $("#mainContainer").slideToggle("slow");
         $(".lifeCover").slideToggle("slow");
     });
 });
-// Life Close
+// Gallery Close
 $(document).ready(function(){
     $("#appLife-close").click(function(){
         $("#mainContainer").slideToggle("slow");
@@ -129,6 +129,19 @@ $(document).ready(function(){
 });
 
 //////////// Phone Apps ////////////
+
+
+// TEMP MOBILE FIX
+$(document).ready(function(){
+    $("#note").click(function(){
+		$(".jill").slideToggle("slow");
+        $("#welcomeLayer").slideToggle("slow");
+        $("#unlock").slideToggle("fast");
+		$("#note").slideToggle("fast");
+		$("#mainContainer").slideToggle("slow");
+    });
+});
+
 
 // Volume
 document.getElementById("music").volume = 0.02;

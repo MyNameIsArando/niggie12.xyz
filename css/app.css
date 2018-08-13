@@ -11,7 +11,7 @@
 /* Danger/u/ App */
 .dangerCover {
   display: none;
-  background-color: #000;
+  background-color: #202020;
   width: 100%; height: 100%;
 }
 .dangerBar {
@@ -55,7 +55,6 @@
   display: none;
   background-color: #F0D3CE;
   width: 100%; height: 100%;
-  /* Need a inner border */
 }
 .augeyeBar {
   display: block;
@@ -66,4 +65,66 @@
   padding: 2% 5%;
   text-align: left;
 }
+.augeyeWelcome {
+  margin: 0 0 40px 0;
+}
+#augeyeWelcome-img {
+  display: inline-block;
+  width: 200px;
+  margin: 0 10px 0 0;
+}
+.augeyeWelcome-text {
+  display: inline-block;
+  font-size: 54px; text-align: left;
+  vertical-align: top;
+  color: #5D0E35;
+}
+.augeyeAltfont {
+  font-family: cyber;
+  font-size: 36px;
+  color: #5D0E35;
+}
 
+.augeyeItem-container {
+  text-align: center;
+}
+.augeyeLine {
+  border: 1px solid #5D0E35;
+}
+.augeyeItem {
+  display: inline-block;
+  width: 260px; height: 400px;
+  background-color: #5D0E35;
+  padding: 20px;
+  margin: 0 20px;
+  vertical-align: top;
+}
+.augeyeItem-inner {
+  width: 100%; height: 100%;
+  background-color: #F0D3CE;
+}
+.augeyeItem-innerImage {
+  width: 100%; height: 35%;
+  background-color: #202020;
+  margin: 0 0 4% 0;
+  background-size: cover;
+  background-position: center;
+}
+.augeyeItem-innerCont {
+  padding: 2%;
+}
+.augeyeItem-innerText {
+  font-size: 16px; font-family: vcr; color: #5D0E35;
+}
+
+
+/* Universal */
+.appBack {
+  position: fixed;
+  bottom: 0;
+  width: 100%; height: 60px;
+  background-color: #000;
+}
+.appClose {
+  cursor: pointer;
+}
