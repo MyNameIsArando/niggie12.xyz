@@ -58,14 +58,14 @@
 
 // Welcome Open
 $(document).ready(function(){
-    $("#app-welcome").click(function(){
+    $("#appWelcome").click(function(){
         $("#mainContainer").slideToggle("slow");
         $(".welcomeCover").slideToggle("slow");
     });
 });
 // Welcome Close
 $(document).ready(function(){
-    $("#app-welcome-close").click(function(){
+    $("#appWelcome-close").click(function(){
         $("#mainContainer").slideToggle("slow");
         $(".welcomeCover").slideToggle("slow");
     });
@@ -73,14 +73,14 @@ $(document).ready(function(){
 
 // Dangeru Open
 $(document).ready(function(){
-    $("#app-dangeru").click(function(){
+    $("#appDangeru").click(function(){
         $("#mainContainer").slideToggle("slow");
         $(".dangerCover").slideToggle("slow");
     });
 });
 // Dangeru Close
 $(document).ready(function(){
-    $("#app-dangeru-close").click(function(){
+    $("#appDangeru-close").click(function(){
         $("#mainContainer").slideToggle("slow");
         $(".dangerCover").slideToggle("slow");
     });
@@ -88,14 +88,14 @@ $(document).ready(function(){
 
 // Life Open
 $(document).ready(function(){
-    $("#app-life").click(function(){
+    $("#appLife").click(function(){
         $("#mainContainer").slideToggle("slow");
         $(".lifeCover").slideToggle("slow");
     });
 });
 // Life Close
 $(document).ready(function(){
-    $("#app-life-close").click(function(){
+    $("#appLife-close").click(function(){
         $("#mainContainer").slideToggle("slow");
         $(".lifeCover").slideToggle("slow");
     });
@@ -103,14 +103,14 @@ $(document).ready(function(){
 
 // Augmented Eye Open
 $(document).ready(function(){
-    $("#app-augeye").click(function(){
+    $("#appAugeye").click(function(){
         $("#mainContainer").slideToggle("slow");
         $(".augeyeCover").slideToggle("slow");
     });
 });
 // Augmented Eye Close
 $(document).ready(function(){
-    $("#app-augeye-close").click(function(){
+    $("#appAugeye-close").click(function(){
         $("#mainContainer").slideToggle("slow");
         $(".augeyeCover").slideToggle("slow");
     });
