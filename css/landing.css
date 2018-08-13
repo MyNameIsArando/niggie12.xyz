@@ -48,8 +48,11 @@
 
 /* @Media CSS */
 @media screen and (max-width: 1367px) {
+  body {
+    background-position: 60%;
+  }
   .jill {
-    font-size: 64px;
+    font-size: 56px;
   }
   #unlock {
     width: 128px;
