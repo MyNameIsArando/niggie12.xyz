@@ -54,7 +54,7 @@
 .augeyeCover {
   display: none;
   background-color: #F0D3CE;
-  width: 100%; height: 100%;
+  width: 100%; min-height: 100%;
 }
 .augeyeBar {
   display: block;
@@ -127,4 +127,13 @@
 }
 .appClose {
   cursor: pointer;
+  height: 60px;
+}
+@media screen and (max-width: 640px) {
+  .appBack {
+    height: 30px;
+  }
+  .appClose {
+    height: 30px;
+  }
 }
