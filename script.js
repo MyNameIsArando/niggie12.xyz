@@ -18,7 +18,7 @@
   	holdTime = 1000,
 	holdTrigger = $('.holdTrigger'),
 	welcomeLayerV = document.getElementById("welcomeLayer"),
-	mainContainer = document.getElementById("main-container");
+	mainContainer = document.getElementById("mainContainer");
 
 	holdTrigger.mousedown(function() {
     	timeoutId = setTimeout(menuToggle, holdTime);
@@ -31,7 +31,7 @@
         $("#welcomeLayer").slideToggle("slow");
         $("#unlock").slideToggle("fast");
 		$("#note").slideToggle("fast");
-		$("#main-container").slideToggle("slow");
+		$("#mainContainer").slideToggle("slow");
 	});
 	// i think this jquery event should work for mobiles
 
@@ -48,7 +48,7 @@
         $("#welcomeLayer").slideToggle("slow");
         $("#unlock").slideToggle("fast");
 		$("#note").slideToggle("fast");
-		$("#main-container").slideToggle("slow");
+		$("#mainContainer").slideToggle("slow");
 		
 	}
 
@@ -59,60 +59,60 @@
 // Welcome Open
 $(document).ready(function(){
     $("#app-welcome").click(function(){
-        $("#main-container").slideToggle("slow");
-        $(".welcome-cover").slideToggle("slow");
+        $("#mainContainer").slideToggle("slow");
+        $(".welcomeCover").slideToggle("slow");
     });
 });
 // Welcome Close
 $(document).ready(function(){
     $("#app-welcome-close").click(function(){
-        $("#main-container").slideToggle("slow");
-        $(".welcome-cover").slideToggle("slow");
+        $("#mainContainer").slideToggle("slow");
+        $(".welcomeCover").slideToggle("slow");
     });
 });
 
 // Dangeru Open
 $(document).ready(function(){
     $("#app-dangeru").click(function(){
-        $("#main-container").slideToggle("slow");
-        $(".danger-cover").slideToggle("slow");
+        $("#mainContainer").slideToggle("slow");
+        $(".dangerCover").slideToggle("slow");
     });
 });
 // Dangeru Close
 $(document).ready(function(){
     $("#app-dangeru-close").click(function(){
-        $("#main-container").slideToggle("slow");
-        $(".danger-cover").slideToggle("slow");
+        $("#mainContainer").slideToggle("slow");
+        $(".dangerCover").slideToggle("slow");
     });
 });
 
 // Life Open
 $(document).ready(function(){
     $("#app-life").click(function(){
-        $("#main-container").slideToggle("slow");
-        $(".life-cover").slideToggle("slow");
+        $("#mainContainer").slideToggle("slow");
+        $(".lifeCover").slideToggle("slow");
     });
 });
 // Life Close
 $(document).ready(function(){
     $("#app-life-close").click(function(){
-        $("#main-container").slideToggle("slow");
-        $(".life-cover").slideToggle("slow");
+        $("#mainContainer").slideToggle("slow");
+        $(".lifeCover").slideToggle("slow");
     });
 });
 
 // Augmented Eye Open
 $(document).ready(function(){
     $("#app-augeye").click(function(){
-        $("#main-container").slideToggle("slow");
-        $(".augeye-cover").slideToggle("slow");
+        $("#mainContainer").slideToggle("slow");
+        $(".augeyeCover").slideToggle("slow");
     });
 });
 // Augmented Eye Close
 $(document).ready(function(){
     $("#app-augeye-close").click(function(){
-        $("#main-container").slideToggle("slow");
-        $(".augeye-cover").slideToggle("slow");
+        $("#mainContainer").slideToggle("slow");
+        $(".augeyeCover").slideToggle("slow");
     });
 });
 
@@ -124,7 +124,7 @@ $(document).ready(function(){
         $("#welcomeLayer").slideToggle("slow");
         $("#unlock").slideToggle("fast");
 		$("#note").slideToggle("fast");
-		$("#main-container").slideToggle("slow");
+		$("#mainContainer").slideToggle("slow");
     });
 });
 
@@ -145,7 +145,7 @@ function pauseAudio() {
 // Modal
 
 var modal = document.getElementById('popup');
-var btn = document.getElementById("credit-btn");
+var btn = document.getElementById("creditBtn");
 var span = document.getElementsByClassName("close")[0];
 
 btn.onclick = function() {
