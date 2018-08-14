@@ -229,3 +229,15 @@ ul {
   .crt {
     animation: textShadow 0s infinite; /* Change number value to enable textshadow */
 }
+
+@media screen and (max-width: 640px) {
+  .crt::after {
+    background: none;
+  }
+  .crt::before {
+    background: none;
+  }
+  .crt {
+    animation: none;
+  }
+}
