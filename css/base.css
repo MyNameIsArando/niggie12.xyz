@@ -230,7 +230,7 @@ ul {
     animation: textShadow 0s infinite; /* Change number value to enable textshadow */
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 640px) { /* CRT effect disabled by default on mobile to save on performence */
   .crt::after {
     background: none;
   }
