@@ -88,16 +88,16 @@ $(document).ready(function(){
 
 // Gallery Open
 $(document).ready(function(){
-    $("#appLife").click(function(){
+    $("#appGallery").click(function(){
         $("#mainContainer").slideToggle("slow");
-        $(".lifeCover").slideToggle("slow");
+        $(".galleryCover").slideToggle("slow");
     });
 });
 // Gallery Close
 $(document).ready(function(){
-    $("#appLife-close").click(function(){
+    $("#appGallery-close").click(function(){
         $("#mainContainer").slideToggle("slow");
-        $(".lifeCover").slideToggle("slow");
+        $(".galleryCover").slideToggle("slow");
     });
 });
 
