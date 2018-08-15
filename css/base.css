@@ -1,5 +1,6 @@
 a {
-	color: white;
+  color: white;
+  text-decoration: none;
 }
 body {
 	margin: 0;
@@ -8,8 +9,7 @@ body {
 	padding: 0;
 	height: 100%; width: 100%;
 	background-image: url("../img/landing/landing-bg.png");
-  background-size: cover;
-  background-position: center;
+  background-size: cover; background-position: center;
 }
 button {
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
