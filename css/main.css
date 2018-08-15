@@ -11,10 +11,9 @@
 }
 
 .sectionContainer {
-  text-align: center;
+  text-align: center; font-size: 0;
   vertical-align: top;
   display: inline-block;
-  font-size: 0;
 }
 
 /* Left side */
@@ -48,13 +47,12 @@
 
 .section-image {
   background-image: url('../img/main/room.gif');
-  background-position: center;
-  background-size: cover;
+  background-position: center; background-size: cover;
 }
 
 .disableSave {
-  -webkit-user-select:none;
-  -webkit-touch-callout:none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
 }
 
 /* Convo Box CSS */
@@ -63,8 +61,7 @@
   text-align: center;
 }
 .conversation {
-  font-size: 26px;
-  text-align: left;
+  font-size: 26px; text-align: left;
   padding-bottom: 5px;
 }
 .convo-space {
@@ -157,8 +154,7 @@
   width: 150px; height: 150px;
   border-radius: 5px;
   background-color: #202020;
-  background-position: center;
-  background-size: cover;
+  background-position: center; background-size: cover;
   box-shadow: #000 0px 0px 0px;
   transition: box-shadow 0.5s;
 }
