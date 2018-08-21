@@ -61,7 +61,7 @@ $(document).ready(function(){
     $("#appWelcome").click(function(){
         $("#mainContainer").toggle("slow");
 		$(".welcomeCover").slideToggle("slow");
-		$(".appClose").slideToggle("slow");
+		$(".appClose").toggle("scale, 1500");
     });
 });
 // Welcome Close
@@ -69,7 +69,7 @@ $(document).ready(function(){
     $("#appWelcome-close").click(function(){
         $("#mainContainer").toggle("slow");
 		$(".welcomeCover").slideToggle("slow");
-		$(".appClose").slideToggle("slow");
+		$(".appClose").toggle("scale, 1500");
     });
 });
 
@@ -78,7 +78,7 @@ $(document).ready(function(){
     $("#appDangeru").click(function(){
         $("#mainContainer").toggle("slow");
 		$(".dangerCover").slideToggle("slow");
-		$(".appClose").slideToggle("slow");
+		$(".appClose").toggle("scale, 1500");
     });
 });
 // Dangeru Close
@@ -86,7 +86,7 @@ $(document).ready(function(){
     $("#appDangeru-close").click(function(){
         $("#mainContainer").toggle("slow");
 		$(".dangerCover").slideToggle("slow");
-		$(".appClose").slideToggle("slow");
+		$(".appClose").toggle("scale, 1500");
     });
 });
 
@@ -95,7 +95,7 @@ $(document).ready(function(){
     $("#appGallery").click(function(){
         $("#mainContainer").toggle("slow");
 		$(".galleryCover").slideToggle("slow");
-		$(".appClose").slideToggle("slow");
+		$(".appClose").toggle("scale, 1500");
     });
 });
 // Gallery Close
@@ -103,7 +103,7 @@ $(document).ready(function(){
     $("#appGallery-close").click(function(){
         $("#mainContainer").toggle("slow");
 		$(".galleryCover").slideToggle("slow");
-		$(".appClose").slideToggle("slow");
+		$(".appClose").toggle("scale, 1500");
     });
 });
 
@@ -112,7 +112,7 @@ $(document).ready(function(){
     $("#appAugeye").click(function(){
         $("#mainContainer").toggle("slow");
 		$(".augeyeCover").slideToggle("slow");
-		$(".appClose").slideToggle("slow");
+		$(".appClose").toggle("scale, 1500");
     });
 });
 // Augmented Eye Close
@@ -120,7 +120,7 @@ $(document).ready(function(){
     $("#appAugeye-close").click(function(){
         $("#mainContainer").toggle("slow");
 		$(".augeyeCover").slideToggle("slow");
-		$(".appClose").slideToggle("slow");
+		$(".appClose").toggle("scale, 1500");
     });
 });
 
