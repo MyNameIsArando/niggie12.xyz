@@ -59,60 +59,68 @@
 // Welcome Open
 $(document).ready(function(){
     $("#appWelcome").click(function(){
-        $("#mainContainer").slideToggle("slow");
-        $(".welcomeCover").slideToggle("slow");
+        $("#mainContainer").toggle("slow");
+		$(".welcomeCover").slideToggle("slow");
+		$(".appClose").slideToggle("slow");
     });
 });
 // Welcome Close
 $(document).ready(function(){
     $("#appWelcome-close").click(function(){
-        $("#mainContainer").slideToggle("slow");
-        $(".welcomeCover").slideToggle("slow");
+        $("#mainContainer").toggle("slow");
+		$(".welcomeCover").slideToggle("slow");
+		$(".appClose").slideToggle("slow");
     });
 });
 
 // Dangeru Open
 $(document).ready(function(){
     $("#appDangeru").click(function(){
-        $("#mainContainer").slideToggle("slow");
+        $("#mainContainer").toggle("slow");
 		$(".dangerCover").slideToggle("slow");
+		$(".appClose").slideToggle("slow");
     });
 });
 // Dangeru Close
 $(document).ready(function(){
     $("#appDangeru-close").click(function(){
-        $("#mainContainer").slideToggle("slow");
+        $("#mainContainer").toggle("slow");
 		$(".dangerCover").slideToggle("slow");
+		$(".appClose").slideToggle("slow");
     });
 });
 
 // Gallery Open
 $(document).ready(function(){
     $("#appGallery").click(function(){
-        $("#mainContainer").slideToggle("slow");
-        $(".galleryCover").slideToggle("slow");
+        $("#mainContainer").toggle("slow");
+		$(".galleryCover").slideToggle("slow");
+		$(".appClose").slideToggle("slow");
     });
 });
 // Gallery Close
 $(document).ready(function(){
     $("#appGallery-close").click(function(){
-        $("#mainContainer").slideToggle("slow");
-        $(".galleryCover").slideToggle("slow");
+        $("#mainContainer").toggle("slow");
+		$(".galleryCover").slideToggle("slow");
+		$(".appClose").slideToggle("slow");
     });
 });
 
 // Augmented Eye Open
 $(document).ready(function(){
     $("#appAugeye").click(function(){
-        $("#mainContainer").slideToggle("slow");
-        $(".augeyeCover").slideToggle("slow");
+        $("#mainContainer").toggle("slow");
+		$(".augeyeCover").slideToggle("slow");
+		$(".appClose").slideToggle("slow");
     });
 });
 // Augmented Eye Close
 $(document).ready(function(){
     $("#appAugeye-close").click(function(){
-        $("#mainContainer").slideToggle("slow");
-        $(".augeyeCover").slideToggle("slow");
+        $("#mainContainer").toggle("slow");
+		$(".augeyeCover").slideToggle("slow");
+		$(".appClose").slideToggle("slow");
     });
 });
 
