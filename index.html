@@ -13,12 +13,28 @@
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
-	<div class="crt"></div>
+<body class="crt">
 
-	<p style="padding-top: 150px; font-size: 62px;">Hey we're doing this shit again.</p>
-	<p style="padding-top: 30px; font-size: 22px;">(and hopefully for real this time)</p>
-	<p style="padding-top: 30px; font-size: 8px;">(maybe)</p>
+	<div id="welcomeLayer">
+		<div class="welcomeSplitter">
+			<div class="welcomeInner">
+				<p class="jill" id="date"></p>
+				<p class="jill">Welcome, Jill!</p>
+			</div>
+		</div>
+		<div class="welcomeSplitter">
+			<div class="welcomeInner">
+				<img src="img/landing/lock.png" id="unlock" />
+				<p id="note">A VA-11 HALL-A FANSITE | SOME FEATURES ARE NOT WORKING/BUGGY</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="mainContainer">
+		<p style="padding-top: 150px; font-size: 62px;">Hey we're doing this shit again.</p>
+		<p style="padding-top: 30px; font-size: 22px;">(and hopefully for real this time)</p>
+		<p style="padding-top: 30px; font-size: 8px;">(maybe)</p>
+	</div>
 
 	<audio src="audio.mp3" id="music" loop></audio>
 </body>
