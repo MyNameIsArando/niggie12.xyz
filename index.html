@@ -1,254 +1,298 @@
 <!DOCTYPE html>
 <html>
-<title>va11halla.net</title>
+<title>VA-11 HALL-A FANSITE</title>
 <head>
+	<!-- Website & Images hosted by Github. -->
 	<!-- All copyrights belong to their respective owners. Please don't sue 👀 -->
 	<!-- Contact Email: tylercrowhurst123@gmail.com -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
-	<meta property="title" content="va11halla">
-	<meta name="description" content=".">
-	<meta name="author" content="Dab Master">
+	<!-- Coded using VSCode | Tested using Firefox -->
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/landing.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" href="css/app.css" />
+	<link rel="stylesheet" type="text/css" href="css/hover-min.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<meta property="title" content="VA-11 HALL-A FANSITE">
+	<meta name="description" content="wip">
+	<meta name="author" content="Arando & Demi">
 	<meta charset='utf-8'>
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<style>
-a {
-  color: white;
-  text-decoration: none;
-}
-body {
-	margin: 0;
-	font-family: "Source Sans Pro", Helvetica, sans-serif;
-	background-color: #000;
-	padding: 0;
-	height: 100%; width: 100%;
-  background-size: cover; background-position: center;
-}
-button {
-	font-family: "Source Sans Pro", Helvetica, sans-serif;
-}
-hr {
-	margin: 0.5% 44% 1% 44%;
-	border-top: 1px solid #fff;
-}
-html {
-	height: 100%;
-}
-img {
-	margin: 0 auto;
-	display: block;
-}
-p {
-	font-family: vcr; font-size: 1em;
-	color: white;
-	text-align: center; text-transform: uppercase;
-  margin: 0;
-}
-ul {
-	padding: 0;
-}
-@font-face {
-  font-family: vcr;
-  src: url("vcr-mono.ttf");
-}
-
-
-/* Typewriter effect */ /* Not my code */
-.typewriter {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid transparent; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  animation: 
-    typing 1.5s steps(15, end),
-    blink-caret .2s step-end infinite;
-}
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: transparent; }
-}
-
-
-/* CRT Effect */ /* Not my code http://aleclownes.com/2017/02/01/crt-display.html */
-@keyframes flicker {
-    0% {
-      opacity: 0.27861;
-    }
-    5% {
-      opacity: 0.34769;
-    }
-    10% {
-      opacity: 0.23604;
-    }
-    15% {
-      opacity: 0.90626;
-    }
-    20% {
-      opacity: 0.18128;
-    }
-    25% {
-      opacity: 0.83891;
-    }
-    30% {
-      opacity: 0.65583;
-    }
-    35% {
-      opacity: 0.67807;
-    }
-    40% {
-      opacity: 0.26559;
-    }
-    45% {
-      opacity: 0.84693;
-    }
-    50% {
-      opacity: 0.96019;
-    }
-    55% {
-      opacity: 0.08594;
-    }
-    60% {
-      opacity: 0.20313;
-    }
-    65% {
-      opacity: 0.71988;
-    }
-    70% {
-      opacity: 0.53455;
-    }
-    75% {
-      opacity: 0.37288;
-    }
-    80% {
-      opacity: 0.71428;
-    }
-    85% {
-      opacity: 0.70419;
-    }
-    90% {
-      opacity: 0.7003;
-    }
-    95% {
-      opacity: 0.36108;
-    }
-    100% {
-      opacity: 0.24387;
-    }
-  }
-  @keyframes textShadow {
-    0% {
-      text-shadow: 0.4389924193300864px 0 1px rgba(0,30,255,0.5), -0.4389924193300864px 0 1px rgba(255,0,80,0.3), 0 0 3px;
-    }
-    5% {
-      text-shadow: 2.7928974010788217px 0 1px rgba(0,30,255,0.5), -2.7928974010788217px 0 1px rgba(255,0,80,0.3), 0 0 3px;
-    }
-    10% {
-      text-shadow: 0.02956275843481219px 0 1px rgba(0,30,255,0.5), -0.02956275843481219px 0 1px rgba(255,0,80,0.3), 0 0 3px;
-    }
-    15% {
-      text-shadow: 0.40218538552878136px 0 1px rgba(0,30,255,0.5), -0.40218538552878136px 0 1px rgba(255,0,80,0.3), 0 0 3px;
-    }
-    20% {
-      text-shadow: 3.4794037899852017px 0 1px rgba(0,30,255,0.5), -3.4794037899852017px 0 1px rgba(255,0,80,0.3), 0 0 3px;
-    }
-    25% {
-      text-shadow: 1.6125630401149584px 0 1px rgba(0,30,255,0.5), -1.6125630401149584px 0 1px rgba(255,0,80,0.3), 0 0 3px;
-    }
-    30% {
-      text-shadow: 0.7015590085143956px 0 1px rgba(0,30,255,0.5), -0.7015590085143956px 0 1px rgba(255,0,80,0.3), 0 0 3px;
-    }
-    35% {
-      text-shadow: 3.896914047650351px 0 1px rgba(0,30,255,0.5), -3.896914047650351px 0 1px rgba(255,0,80,0.3), 0 0 3px;
-    }
-    40% {
-      text-shadow: 3.870905614848819px 0 1px rgba(0,30,255,0.5), -3.870905614848819px 0 1px rgba(255,0,80,0.3), 0 0 3px;
-    }
-    45% {
-      text-shadow: 2.231056963361899px 0 1px rgba(0,30,255,0.5), -2.231056963361899px 0 1px rgba(255,0,80,0.3), 0 0 3px;
-    }
-    50% {
-      text-shadow: 0.08084290417898504px 0 1px rgba(0,30,255,0.5), -0.08084290417898504px 0 1px rgba(255,0,80,0.3), 0 0 3px;
-    }
-    55% {
-      text-shadow: 2.3758461067427543px 0 1px rgba(0,30,255,0.5), -2.3758461067427543px 0 1px rgba(255,0,80,0.3), 0 0 3px;
-    }
-    60% {
-      text-shadow: 2.202193051050636px 0 1px rgba(0,30,255,0.5), -2.202193051050636px 0 1px rgba(255,0,80,0.3), 0 0 3px;
-    }
-    65% {
-      text-shadow: 2.8638780614874975px 0 1px rgba(0,30,255,0.5), -2.8638780614874975px 0 1px rgba(255,0,80,0.3), 0 0 3px;
-    }
-    70% {
-      text-shadow: 0.48874025155497314px 0 1px rgba(0,30,255,0.5), -0.48874025155497314px 0 1px rgba(255,0,80,0.3), 0 0 3px;
-    }
-    75% {
-      text-shadow: 1.8948491305757957px 0 1px rgba(0,30,255,0.5), -1.8948491305757957px 0 1px rgba(255,0,80,0.3), 0 0 3px;
-    }
-    80% {
-      text-shadow: 0.0833037308038857px 0 1px rgba(0,30,255,0.5), -0.0833037308038857px 0 1px rgba(255,0,80,0.3), 0 0 3px;
-    }
-    85% {
-      text-shadow: 0.09769827255241735px 0 1px rgba(0,30,255,0.5), -0.09769827255241735px 0 1px rgba(255,0,80,0.3), 0 0 3px;
-    }
-    90% {
-      text-shadow: 3.443339761481782px 0 1px rgba(0,30,255,0.5), -3.443339761481782px 0 1px rgba(255,0,80,0.3), 0 0 3px;
-    }
-    95% {
-      text-shadow: 2.1841838852799786px 0 1px rgba(0,30,255,0.5), -2.1841838852799786px 0 1px rgba(255,0,80,0.3), 0 0 3px;
-    }
-    100% {
-      text-shadow: 2.6208764473832513px 0 1px rgba(0,30,255,0.5), -2.6208764473832513px 0 1px rgba(255,0,80,0.3), 0 0 3px;
-    }
-  }
-  .crt::after {
-    content: " ";
-    display: block; position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
-    background: rgba(18, 16, 16, 0.1);
-    opacity: 0;
-    z-index: 2;
-    pointer-events: none;
-    animation: flicker 0s infinite; /* Increase value for CRT flicker */
-  }
-  .crt::before {
-    content: " ";
-    display: block; position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
-    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-    z-index: 2;
-    background-size: 100% 2px, 3px 100%;
-    pointer-events: none;
-  }
-  .crt {
-    animation: textShadow 0s infinite; /* Change number value to enable textshadow */
-}
-
-@media screen and (max-width: 640px) { /* CRT effect disabled by default on mobile to save on performence */
-  .crt::after {
-    background: none;
-  }
-  .crt::before {
-    background: none;
-  }
-  .crt {
-    animation: none;
-  }
-}
-</style>
-<body class="crt" style="background-image: url(wait.png)">
-	<div id="nig">
-		<p style="padding: 10%; font-size: 46px; color: black;">Welcome To va11halla.net</p>
+<body class="crt">
+	<div id="welcomeLayer">
+		<div class="fade">
+			<div class="welcome">
+				<p class="jill" id="date"></p>
+				<p class="jill">Welcome, Jill!</p>
+			</div>
+			<img src="img/landing/lock.png" class="holdTrigger disableSave" id="unlock" />
+			<p id="note">A VA-11 HALL-A FANSITE | SOME FEATURES ARE NOT WORKING/BUGGY</p>
+			<p id="help">Click and hold for 2 seconds</p>
+		</div>
 	</div>
-	<p style="margin-top: 1%; color: black;">Build in Progress</p>
-	<a href="http://arando.xyz/" style="color: black;"><p id="mu" style="color: black; padding: 3%; text-decoration: underline;">Arando </a>|<a href="http://iwantgodtoend.me" style="color: black;"> Demiture</a></p>
-	<p style="margin-top: 1%; color: black;">Click <a href="va11halla/index.html" style="color: black; text-decoration: underline;">here</a> to visit the old site</p>
+	<div id="mainContainer">
+		<div class="sectionContainer">
+			<div class="sectionBox-cover">
+				<div class="sectionBox section-image"></div>
+				<div class="sectionBox-text">
+					<div class="convo-box">
+						<p class="conversation">Fore: "Isn't this site a bit shitty?"</p>
+						<p class="conversation">Jill: "You don't have to tell me twice."</p>
+					</div>
+				</div>
+				<div class="sectionBox-con">
+					<button class="controls" id="creditBtn">Credits</button>
+					<button class="controls" onclick="pauseAudio()">Pause</button>
+					<button class="controls" onclick="playAudio()">Play</button>
+					<button class="controls" id="relock">Lock</button>
+					<button class="controls crtToggle">CRT</button>
+				</div>
+				<p id="mobile-warning">Use Desktop to access apps</p>
+			</div>
+			<div class="sectionBox-phone phoneBg">
+				<div class="phoneApp-container">
+					<div class="phoneApp" id="appWelcome" style="background-image: url(img/main/app-welcome.png);"></div>
+					<div class="phoneApp" id="appDangeru" style="background-image: url(img/main/app-dangeru.png);"></div>
+					<div class="phoneApp" id="appGallery" style="background-image: url(img/main/app-save.png);"></div>
+					<div class="phoneApp" id="appAugeye" style="background-image: url(img/main/app-augeye.png);"></div>
+					<a href="https://trello.com/b/Pv2z5gF2"><div class="phoneApp"  style="background-image: url(img/main/app-trello.png); width: 330px; height: 51px;"></div></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="welcomeCover">
+		<p id="welcomeSoon">Soon.</p>
+		<div class="appBack">
+			<img src="img/app/back.png" id="appWelcome-close" class="appClose" />
+		</div>
+	</div>
+
+	<div class="dangerCover">
+		<div class="dangerBar" id="dangerBar">
+			<img src="img/app/dangeru/app-dangeru.png" />
+		</div>
+		<div class="dangerContainer">
+			<div class="dangerWelcome">
+				<img src="img/app/dangeru/dangeru-girl.png" id="dangerWelcome-img" />
+				<p class="dangerWelcome-text">Danger/u/ <br/>
+					<span class="dangerAltfont">"Hippiy Hoppity, funny meme number 23"</span>
+				</p>
+				<hr />
+			</div>
+			<div class="dangerThread-cont">
+				<a href="wait.html"><div class="dangerThread hvr-shrink">
+					<div class="dangerImage" style="background-image: url('img/app/dangeru/threads/thread1.png');"></div>
+					<div class="dangerContent">
+						<p class="dangerTitle">Thread 1 Title</p>
+						<p class="dangerText">R: 0</p>
+					</div>
+				</div></a>
+				<a href="wait.html"><div class="dangerThread hvr-shrink">
+					<div class="dangerImage" style="background-image: url('img/app/dangeru/threads/thread2.png');"></div>
+					<div class="dangerContent">
+						<p class="dangerTitle">Thread 2 Title</p>
+						<p class="dangerText">R: 0</p>
+					</div>
+				</div></a>
+				<a href="wait.html"><div class="dangerThread hvr-shrink">
+					<div class="dangerImage" style="background-image: url('img/app/dangeru/threads/thread3.png');"></div>
+					<div class="dangerContent">
+						<p class="dangerTitle">Thread 3 Title</p>
+						<p class="dangerText">R: 0</p>
+					</div>
+				</div></a>
+				<a href="wait.html"><div class="dangerThread hvr-shrink">
+					<div class="dangerImage" style="background-image: url('img/app/dangeru/threads/thread4.png');"></div>
+					<div class="dangerContent">
+						<p class="dangerTitle">Thread 4 Title</p>
+						<p class="dangerText">R: 0</p>
+					</div>
+				</div></a>
+				<a href="wait.html"><div class="dangerThread hvr-shrink">
+					<div class="dangerImage" style="background-image: url('img/app/dangeru/threads/thread5.png');"></div>
+					<div class="dangerContent">
+						<p class="dangerTitle">Thread 5 Title</p>
+						<p class="dangerText">R: 0</p>
+					</div>
+				</div></a>
+				<a href="wait.html"><div class="dangerThread hvr-shrink">
+					<div class="dangerImage" style="background-image: url('img/app/dangeru/threads/thread6.png');"></div>
+					<div class="dangerContent">
+						<p class="dangerTitle">Thread 6 Title</p>
+						<p class="dangerText">R: 0</p>
+					</div>
+				</div></a>
+				<a href="wait.html"><div class="dangerThread hvr-shrink">
+					<div class="dangerImage" style="background-image: url('img/app/dangeru/threads/thread7.png');"></div>
+					<div class="dangerContent">
+						<p class="dangerTitle">Thread 7 Title</p>
+						<p class="dangerText">R: 0</p>
+					</div>
+				</div></a>
+				<a href="wait.html"><div class="dangerThread hvr-shrink">
+					<div class="dangerImage" style="background-image: url('img/app/dangeru/threads/thread8.png');"></div>
+					<div class="dangerContent">
+						<p class="dangerTitle">Thread 8 Title</p>
+						<p class="dangerText">R: 0</p>
+					</div>
+				</div></a>
+				<a href="wait.html"><div class="dangerThread hvr-shrink">
+					<div class="dangerImage" style="background-image: url('img/app/dangeru/threads/thread9.png');"></div>
+					<div class="dangerContent">
+						<p class="dangerTitle">Thread 9 Title</p>
+						<p class="dangerText">R: 0</p>
+					</div>
+				</div></a>
+			</div>
+		</div>
+		<div class="appBack">
+			<a href="#dangerBar"><img src="img/app/back.png" id="appDangeru-close" class="appClose" /></a>
+		</div>
+	</div>
+
+	<div class="galleryCover">
+		<div class="galleryBar" id="galleryBar">
+			<img src="img/app/gallery/gallery-icon.png" />
+		</div>
+		<div class="galleryContainer">
+			<div class="galleryWelcome">
+				<img src="img/app/gallery/gallery-welcome.png" id="galleryWelcome-img" />
+				<p class="galleryWelcome-text">GALLERY <br/>
+					<span class="galleryAltfont">"Damn, I wish I was this good"</span>
+				</p>
+				<hr />
+			</div>
+			<div class="galleryItem-cont">
+
+				<a href="wait.html"><div class="galleryItem-land hvr-shrink" style="background-image: url('img/app/gallery/images/x.png')">
+					<p class="galleryItem-text">Artist: XXX | Link</p>
+				</div></a>
+				<a href="wait.html"><div class="galleryItem-port hvr-shrink" style="background-image: url('img/app/gallery/images/x.png')">
+					<p class="galleryItem-text">Artist: XXX | Link</p>
+				</div></a>
+				<a href="wait.html"><div class="galleryItem-land hvr-shrink" style="background-image: url('img/app/gallery/images/x.png')">
+					<p class="galleryItem-text">Artist: XXX | Link</p>
+				</div></a>
+				<a href="wait.html"><div class="galleryItem-port hvr-shrink" style="background-image: url('img/app/gallery/images/x.png')">
+					<p class="galleryItem-text">Artist: XXX | Link</p>
+				</div></a>
+				<a href="wait.html"><div class="galleryItem-port hvr-shrink" style="background-image: url('img/app/gallery/images/x.png')">
+					<p class="galleryItem-text">Artist: XXX | Link</p>
+				</div></a>
+				<a href="wait.html"><div class="galleryItem-land hvr-shrink" style="background-image: url('img/app/gallery/images/x.png')">
+					<p class="galleryItem-text">Artist: XXX | Link</p>
+				</div></a>
+				<a href="wait.html"><div class="galleryItem-port hvr-shrink" style="background-image: url('img/app/gallery/images/x.png')">
+					<p class="galleryItem-text">Artist: XXX | Link</p>
+				</div></a>
+				<a href="wait.html"><div class="galleryItem-land hvr-shrink" style="background-image: url('img/app/gallery/images/x.png')">
+					<p class="galleryItem-text">Artist: XXX | Link</p>
+				</div></a>
+				<a href="wait.html"><div class="galleryItem-land hvr-shrink" style="background-image: url('img/app/gallery/images/x.png')">
+					<p class="galleryItem-text">Artist: XXX | Link</p>
+				</div></a>
+				<a href="wait.html"><div class="galleryItem-port hvr-shrink" style="background-image: url('img/app/gallery/images/x.png')">
+					<p class="galleryItem-text">Artist: XXX | Link</p>
+				</div></a>
+				<a href="wait.html"><div class="galleryItem-land hvr-shrink" style="background-image: url('img/app/gallery/images/x.png')">
+					<p class="galleryItem-text">Artist: XXX | Link</p>
+				</div></a>
+				<a href="wait.html"><div class="galleryItem-port hvr-shrink" style="background-image: url('img/app/gallery/images/x.png')">
+					<p class="galleryItem-text">Artist: XXX | Link</p>
+				</div></a>
+				<a href="wait.html"><div class="galleryItem-port hvr-shrink" style="background-image: url('img/app/gallery/images/x.png')">
+					<p class="galleryItem-text">Artist: XXX | Link</p>
+				</div></a>
+				<a href="wait.html"><div class="galleryItem-land hvr-shrink" style="background-image: url('img/app/gallery/images/x.png')">
+					<p class="galleryItem-text">Artist: XXX | Link</p>
+				</div></a>
+				<a href="wait.html"><div class="galleryItem-port hvr-shrink" style="background-image: url('img/app/gallery/images/x.png')">
+					<p class="galleryItem-text">Artist: XXX | Link</p>
+				</div></a>
+				<a href="wait.html"><div class="galleryItem-land hvr-shrink" style="background-image: url('img/app/gallery/images/x.png')">
+					<p class="galleryItem-text">Artist: XXX | Link</p>
+				</div></a>
+
+			</div>
+			<p id="galleryContact">If you feel your work is miscredited and/or want it removed. Email us<br /> mynameisarando@track44.moe | demiture@track44.moe</p>
+		</div>
+		<div class="appBack">
+			<a href="#galleryBar"><img src="img/app/back.png" id="appGallery-close" class="appClose" /></a>
+		</div>
+	</div>
+
+	<div class="augeyeCover">
+		<div class="augeyeBar" id="augeyeBar">
+			<img src="img/app/augeye/augeye-small.png" />
+		</div>
+		<div class="augeyeContainer">
+			<div class="augeyeWelcome">
+				<img src="img/app/augeye/augeye.png" id="augeyeWelcome-img" />
+				<p class="augeyeWelcome-text">THE AUGMENTED EYE <br/>
+					<span class="augeyeAltfont">"But this time, it's written by the real Lana Smithee"</span>
+				</p>
+				<hr class="augeyeLine" />
+			</div>
+			<div class="augeyeItem-container">
+				<div class="augeyeItem">
+					<div class="augeyeItem-inner">
+						<div class="augeyeItem-innerImage" style="background-image: url('img/app/augeye/article1.png')"></div>
+						<div class="augeyeItem-innerCont">
+							<p class="augeyeItem-innerText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut leo pretium sem mattis laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut leo pretium sem mattis laoreet. </p>
+						</div>
+						<a href="wait.html"><button class="augeyeButton">Source</button></a>
+					</div>
+				</div>
+				<div class="augeyeItem">
+					<div class="augeyeItem-inner">
+						<div class="augeyeItem-innerImage" style="background-image: url('img/app/augeye/article2.png')"></div>
+						<div class="augeyeItem-innerCont">
+							<p class="augeyeItem-innerText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut leo pretium sem mattis laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut leo pretium sem mattis laoreet. </p>
+						</div>
+						<a href="wait.html"><button class="augeyeButton">Source</button></a>
+					</div>
+				</div>
+				<div class="augeyeItem">
+					<div class="augeyeItem-inner">
+						<div class="augeyeItem-innerImage" style="background-image: url('img/app/augeye/article3.png')"></div>
+						<div class="augeyeItem-innerCont">
+							<p class="augeyeItem-innerText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut leo pretium sem mattis laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut leo pretium sem mattis laoreet. </p>
+						</div>
+						<a href="wait.html"><button class="augeyeButton">Source</button></a>
+					</div>
+				</div>
+				<div class="augeyeItem">
+					<div class="augeyeItem-inner">
+						<div class="augeyeItem-innerImage" style="background-image: url('img/app/augeye/article4.png')"></div>
+						<div class="augeyeItem-innerCont">
+							<p class="augeyeItem-innerText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut leo pretium sem mattis laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut leo pretium sem mattis laoreet. </p>
+						</div>
+						<a href="wait.html"><button class="augeyeButton">Source</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="appBack">
+			<a href="#augeyeBar"><img src="img/app/back.png" id="appAugeye-close" class="appClose" /></a>
+		</div>
+	</div>
+
+	<div id="popup" class="modal">
+		<div class="popContent">
+			<span class="close" style="color: white; cursor: pointer;">&times;</span>
+			<p class="modalTitle">Contributors</p>
+			<div class="contributorCov">
+				<a href="https://github.com/MyNameIsArando"><div class="contributor" style="background-image: url('img/misc/arando.png')"><p class="contributorText">Arando</p></div></a>
+				<a href="https://github.com/Demiture"><div class="contributor" style="background-image: url('img/misc/demiture.png')"><p class="contributorText">Demiture</p></div></a>
+			</div>
+			<hr />
+			<p>Special thanks to Sukeban games for creating VA-11 HALL-A.</p>
+		</div>
+	</div>
+
+	<audio src="audio.mp3" id="music" autoplay loop></audio>
 </body>
+<script src="script.js"></script>
 </html>
